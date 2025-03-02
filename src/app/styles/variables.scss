@@ -1,0 +1,56 @@
+:root {
+  --bg-primary: #0e0e0e;
+  --bg-gradient-primary: linear-gradient(
+    180deg,
+    rgba(14, 14, 14, 0) 0%,
+    #0e0e0e 100%
+  );
+  --bg-button-primary: #fff;
+  --bg-button-second: transparent;
+  --bg-gradient-bubble: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 128, 0, 0.08) 0%,
+    rgba(255, 128, 0, 0) 99.99%
+  );
+  --bg-gradient-season: linear-gradient(
+    249deg,
+    #ff842d -38.14%,
+    #ff5a00 34.94%,
+    #ff9540 113.58%
+  );
+  --bg-gradient-mounth: linear-gradient(
+    249deg,
+    #00d0ff -38.14%,
+    #3c50d2 48.65%,
+    #0075af 146.88%
+  );
+
+  --bg-header: linear-gradient(
+    180deg,
+    rgba(14, 14, 14, 0.5) 0%,
+    rgba(14, 14, 14, 0) 100%
+  );
+
+  --bg-button: transparent;
+  --bg-button--hovered: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.19) 100%
+  );
+
+  --color-title: #fff;
+  --color-subtitle: #adadad;
+  --color-text: #cccccc;
+
+  --screen-large: 2560px;
+  --screen-default: 1920px;
+  --screen-medium: 1440px;
+  --screen-small: 992px;
+  --screen-mobile: 767px;
+
+  --transition-ease: 0.3s ease;
+
+  @media (max-width: var(--screen-medium)) {
+    --font-size: 16px;
+  }
+}
