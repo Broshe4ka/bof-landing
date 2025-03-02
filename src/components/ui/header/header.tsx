@@ -2,7 +2,6 @@ import styles from './header.module.scss';
 import Button from '../button/button';
 import linksData from '@/data/links';
 import socialsData from '@/data/socials';
-import { ReactNode } from 'react';
 
 interface linksDataProps {
   authClear: string;

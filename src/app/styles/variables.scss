@@ -41,6 +41,7 @@
   --color-title: #fff;
   --color-subtitle: #adadad;
   --color-text: #cccccc;
+  --color-text-dark: #7d7d7d;
 
   --screen-large: 2560px;
   --screen-default: 1920px;
@@ -49,6 +50,8 @@
   --screen-mobile: 767px;
 
   --transition-ease: 0.3s ease;
+
+  --bg-dark: #242424;
 
   @media (max-width: var(--screen-medium)) {
     --font-size: 16px;
