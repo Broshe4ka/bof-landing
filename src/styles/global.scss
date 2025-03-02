@@ -1,0 +1,14 @@
+@use "reset";
+@use "variables";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-nunito-sans);
+}
+
+h1 {
+  color: var(--color-test);
+}
