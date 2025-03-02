@@ -19,7 +19,7 @@ export default function Welcome() {
           <div className={styles.content__buttons}>
             <Button href="#">Подписка</Button>
             <Button href="#">
-              <img src="" alt="" />
+              {/* <img src="#" alt="#" /> */}
               Копировать IP
             </Button>
           </div>
