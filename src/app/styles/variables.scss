@@ -53,6 +53,12 @@
 
   --bg-dark: #242424;
 
+  --zi-header: 16;
+
+  --text-title: 2.5rem;
+  --text-subtitle: 2rem;
+  --text-medium: 1.25rem;
+
   @media (max-width: var(--screen-medium)) {
     --font-size: 16px;
   }

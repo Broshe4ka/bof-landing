@@ -1,7 +1,9 @@
+import Welcome from '@/components/sections/welcome/welcome';
+
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Welcome />
     </>
   );
 }

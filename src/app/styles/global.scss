@@ -28,9 +28,10 @@ body {
   width: 100%;
 
   display: flex;
+  justify-content: start;
   flex-direction: column;
   flex-grow: 1;
   gap: 12rem;
 
-  padding: 6rem 0;
+  padding: 0 0 6rem 0;
 }

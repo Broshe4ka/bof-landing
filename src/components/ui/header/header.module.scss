@@ -1,11 +1,26 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  width: 100%;
 
-  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  color: var(--color-title);
   background: var(--bg-header);
+
+  z-index: var(--zi-header);
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem 0;
+  }
 }
 
 .logo {
@@ -88,6 +103,7 @@
 .link {
   &__img {
     max-width: 1rem;
+    filter: brightness(100);
   }
   &__text {
   }

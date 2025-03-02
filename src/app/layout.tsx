@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="ru">
       <body className={`${nunitoSans.variable}`}>
         <Header />
-        <main className="main container">{children}</main>
+        <main className="main">{children}</main>
         <Footer />
       </body>
     </html>
