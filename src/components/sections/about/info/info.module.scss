@@ -1,0 +1,49 @@
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.text {
+  width: calc(50% + 1rem);
+
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  &__icon {
+    max-width: 2rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.image {
+  position: relative;
+
+  max-width: 24rem;
+  width: 100%;
+
+  aspect-ratio: 1/1;
+
+  border-radius: 32px;
+  overflow: hidden;
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 40%;
+
+    background: var(--bg-gradient-primary);
+  }
+}

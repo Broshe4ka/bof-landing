@@ -12,6 +12,7 @@ const nunitoSans = Nunito_Sans({
 export const metadata: Metadata = {
   title: '#BoF | Main Page',
   description: 'Description',
+  icons: '/icons/logo.svg',
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 import styles from './header.module.scss';
 import Button from '../button/button';
-import linksData from '@/data/links';
-import socialsData from '@/data/socials';
+import linksData from '@/data/linksData';
+import socialsData from '@/data/socialsData';
 
 interface linksDataProps {
   authClear: string;

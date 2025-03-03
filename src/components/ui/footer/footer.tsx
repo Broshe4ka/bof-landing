@@ -1,7 +1,7 @@
 import styles from './footer.module.scss';
 import Link from 'next/link';
 
-import socialsData from '@/data/socials';
+import socialsData from '@/data/socialsData';
 
 export default function Footer() {
   return (
