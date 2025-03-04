@@ -1,0 +1,50 @@
+.qa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+  transition: 0.1s ease-in-out background;
+  &__title {
+    padding: 0.75rem 1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.6px;
+
+    user-select: none;
+    cursor: pointer;
+
+    span {
+      color: #5c5c5c;
+    }
+  }
+  &__text {
+    max-height: 0;
+    padding: 0 1rem;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in-out,
+      padding-bottom 0.1s ease-in-out;
+  }
+}
+
+.close {
+  background: #171717;
+}
+
+.open {
+  background: #1b1b1b;
+}
+
+.open__content {
+  max-height: 500px;
+  padding-bottom: 0.75rem;
+}

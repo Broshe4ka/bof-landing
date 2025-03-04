@@ -4,7 +4,7 @@ import subsData from '@/data/subsData';
 
 export default function Subs() {
   return (
-    <section className={`${styles.subs} container`}>
+    <section className={`${styles.subs} section container`}>
       <h2 className="section__title">
         Выберите свой вариант подписки!
       </h2>
