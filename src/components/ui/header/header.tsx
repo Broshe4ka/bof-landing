@@ -1,5 +1,5 @@
 import styles from './header.module.scss';
-import Button from '../button/button';
+import ButtonDefault from '../button/default/button';
 import linksData from '@/data/linksData';
 import socialsData from '@/data/socialsData';
 
@@ -93,7 +93,9 @@ export default function Header() {
             </div>
           </li>
         </ul>
-        <Button href={linksData.authClear}>Авторизация</Button>
+        <ButtonDefault href={linksData.authClear}>
+          Авторизация
+        </ButtonDefault>
       </div>
     </header>
   );

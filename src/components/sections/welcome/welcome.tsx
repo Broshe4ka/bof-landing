@@ -1,5 +1,6 @@
 import styles from './welcome.module.scss';
-import Button from '@/components/ui/button/button';
+import ButtonDefault from '@/components/ui/button/default/button';
+import ButtonTransparent from '@/components/ui/button/transparent/button';
 
 export default function Welcome() {
   return (
@@ -17,11 +18,11 @@ export default function Welcome() {
             всеми!
           </p>
           <div className={styles.content__buttons}>
-            <Button href="#">Подписка</Button>
-            <Button href="#">
-              {/* <img src="#" alt="#" /> */}
+            <ButtonDefault href="#">Подписка</ButtonDefault>
+            <ButtonTransparent href="#">
+              <img src="/icons/copy.svg" alt="Копировать" />
               Копировать IP
-            </Button>
+            </ButtonTransparent>
           </div>
           <p className={styles.content__description}>
             Версия игры: Java Edition 1.21.4

@@ -41,10 +41,13 @@
     margin-top: 1.25rem;
 
     display: flex;
-    align-items: center;
     gap: 1.5rem;
 
     line-height: 140%;
+    a {
+      width: 10.75rem;
+      text-align: center;
+    }
   }
   &__description {
     margin-top: 0.75rem;

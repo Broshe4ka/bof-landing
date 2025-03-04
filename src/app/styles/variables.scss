@@ -6,7 +6,7 @@
     #0e0e0e 100%
   );
   --bg-button-primary: #fff;
-  --bg-button-second: transparent;
+  --bg-button-transparent: transparent;
   --bg-gradient-bubble: radial-gradient(
     50% 50% at 50% 50%,
     rgba(255, 128, 0, 0.08) 0%,
@@ -58,8 +58,9 @@
   --text-title: 2.5rem;
   --text-subtitle: 2rem;
   --text-medium: 1.25rem;
+  --font-size: 16px;
 
   @media (max-width: var(--screen-medium)) {
-    --font-size: 16px;
+    // --font-size: 16px;
   }
 }

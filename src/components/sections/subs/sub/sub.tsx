@@ -1,5 +1,5 @@
 import styles from './sub.module.scss';
-import Button from '@/components/ui/button/button';
+import ButtonDefault from '@/components/ui/button/default/button';
 
 interface subProps {
   id: number;
@@ -33,7 +33,9 @@ export default function Sub(props: subProps) {
             ))}
           </ul>
         </div>
-        <Button href={props.url}>Приобрести</Button>
+        <ButtonDefault href={props.url}>
+          Приобрести
+        </ButtonDefault>
         <img
           src={props.image}
           alt="Маскот"

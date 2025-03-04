@@ -6,14 +6,11 @@ interface ButtonProps {
   children: ReactNode;
 }
 
-export default function Button({
-  href,
-  children,
-}: ButtonProps) {
+export default function ButtonDefault(props: ButtonProps) {
   return (
     <>
-      <a href={href} className={styles.button}>
-        {children}
+      <a href={props.href} className={styles.button}>
+        {props.children}
       </a>
     </>
   );

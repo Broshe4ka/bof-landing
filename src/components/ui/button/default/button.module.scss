@@ -1,0 +1,19 @@
+.button {
+  padding: 0.675rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.675rem;
+
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.64px;
+  text-align: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  border: 1px solid var(--bg-button-primary);
+
+  color: var(--bg-primary);
+  background: var(--bg-button-primary);
+}
