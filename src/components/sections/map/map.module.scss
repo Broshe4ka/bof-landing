@@ -1,0 +1,69 @@
+.map {
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+
+  position: relative;
+
+  aspect-ratio: 2.5/1;
+
+  border-radius: 0.75rem;
+
+  overflow: hidden;
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  &:not(.isActive) {
+    pointer-events: none;
+  }
+}
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-gradient-primary);
+
+  cursor: pointer;
+
+  visibility: visible;
+  opacity: 1;
+
+  transition: var(--transition-ease);
+  z-index: 10;
+
+  transition: 0.3s ease visibility opacity;
+
+  span {
+    padding: 1rem;
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    border-radius: 0.5rem;
+
+    color: var(--color-title);
+    background: var(--bg-primary);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
