@@ -8,12 +8,15 @@ export default function About() {
   return (
     <section className={`${styles.about} section`}>
       <h2 className="section__title">Давайте знакомиться!</h2>
-      {sliderData.map((slide) => (
-        <Slider key={slide.id} {...slide} />
-      ))}
-      {infoData.map((info) => (
-        <Info key={info.id} {...info} />
-      ))}
+
+      <div className={styles.about__wrapper}>
+        {sliderData.map((slide) => (
+          <Slider key={slide.id} {...slide} />
+        ))}
+        {infoData.map((info) => (
+          <Info key={info.id} {...info} />
+        ))}
+      </div>
     </section>
   );
 }

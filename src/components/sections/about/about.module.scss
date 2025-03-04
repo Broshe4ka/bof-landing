@@ -1,1 +1,8 @@
-
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  section:nth-child(odd) {
+    order: -2;
+  }
+}
