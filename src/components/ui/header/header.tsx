@@ -61,35 +61,28 @@ export default function Header() {
                 className={styles.select__img}
               />
               <ul className={styles.select__wrapper}>
-                {socialsData.map(
-                  ({
-                    id,
-                    name,
-                    url,
-                    icon,
-                  }: socialsDataProps) => {
-                    return (
-                      <li
-                        key={id}
-                        className={styles.select__item}
+                {socialsData.map((props: socialsDataProps) => {
+                  return (
+                    <li
+                      key={props.id}
+                      className={styles.select__item}
+                    >
+                      <a
+                        href={props.url}
+                        className={styles.select__link}
                       >
-                        <a
-                          href={url}
-                          className={styles.select__link}
-                        >
-                          <img
-                            src={icon}
-                            alt={'Иконка' + name}
-                            className={styles.link__img}
-                          />
-                          <p className={styles.link__text}>
-                            {name}
-                          </p>
-                        </a>
-                      </li>
-                    );
-                  },
-                )}
+                        <img
+                          src={props.icon}
+                          alt={'Иконка' + props.name}
+                          className={styles.link__img}
+                        />
+                        <p className={styles.link__text}>
+                          {props.name}
+                        </p>
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </li>

@@ -7,11 +7,11 @@ import Map from '@/components/sections/map/map';
 export default function Home() {
   return (
     <>
-      <Welcome />
+      {/* <Welcome />
       <About />
       <Subs />
       <Map />
-      <Faq />
+      <Faq /> */}
     </>
   );
 }

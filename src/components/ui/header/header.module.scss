@@ -61,9 +61,10 @@
   gap: 0.675rem;
 
   cursor: pointer;
+
   &:hover &__wrapper {
     visibility: visible;
-    opacity: 0.75;
+    opacity: 1;
   }
 
   &__title {
@@ -86,8 +87,10 @@
 
     transition: var(--transition-ease);
   }
+
   &__item {
   }
+
   &__link {
     padding: 0.5rem 0.75rem;
 
@@ -100,7 +103,6 @@
 
     border-radius: 0.5rem;
 
-    backdrop-filter: blur(0.25rem);
     background: var(--bg-button--hovered);
   }
 }
@@ -110,6 +112,7 @@
     max-width: 1rem;
     filter: brightness(100);
   }
+
   &__text {
   }
 }
