@@ -1,17 +1,10 @@
 import styles from './sub.module.scss';
+
 import ButtonDefault from '@/components/ui/button/default/button';
 
-interface subProps {
-  id: number;
-  period: string;
-  price: number | string;
-  fetureList: string[];
-  url: string;
-  image: string;
-  bg: string;
-}
+import { SubProps } from '@/types';
 
-export default function Sub(props: subProps) {
+export default function Sub(props: SubProps) {
   return (
     <div
       style={{ background: props.bg }}

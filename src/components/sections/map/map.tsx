@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import styles from './map.module.scss';
+
+import { useState } from 'react';
 
 export default function Map() {
   const [isActive, setIsActive] = useState(false);

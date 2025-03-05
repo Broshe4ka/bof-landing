@@ -1,6 +1,8 @@
 import styles from './subs.module.scss';
+
 import Sub from './sub/sub';
-import subsData from '@/data/subsData';
+
+import { subData } from '@/data';
 
 export default function Subs() {
   return (
@@ -10,7 +12,7 @@ export default function Subs() {
       </h2>
 
       <div className={styles.subs__wrapper}>
-        {subsData.map((sub) => (
+        {subData.map((sub) => (
           <Sub key={sub.id} {...sub} />
         ))}
       </div>

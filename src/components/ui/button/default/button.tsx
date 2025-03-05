@@ -1,5 +1,6 @@
-import { ReactNode } from 'react';
 import styles from './button.module.scss';
+
+import { ReactNode } from 'react';
 
 interface ButtonProps {
   href: string;

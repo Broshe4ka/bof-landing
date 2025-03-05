@@ -1,6 +1,8 @@
 import styles from './faq.module.scss';
-import faqData from '@/data/faqData';
+
 import Qa from './qa/qa';
+
+import { faqData } from '@/data';
 
 export default function Faq() {
   return (

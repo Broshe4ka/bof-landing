@@ -1,15 +1,8 @@
+import { InfoDataProps } from '@/types';
+
 import styles from './info.module.scss';
 
-interface infoDataProps {
-  id: number;
-  icon: string;
-  title: string;
-  subtitle: string;
-  text: string[];
-  image: string;
-}
-
-export default function Info(props: infoDataProps) {
+export default function Info(props: InfoDataProps) {
   return (
     <>
       <section className={styles.info}>

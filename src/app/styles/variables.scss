@@ -35,11 +35,7 @@
   );
 
   --bg-button: transparent;
-  --bg-button--hovered: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.19) 100%
-  );
+  --bg-button--hovered: #ffffff15;
 
   --color-title: #fff;
   --color-subtitle: #adadad;

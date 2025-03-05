@@ -1,8 +1,9 @@
 import styles from './about.module.scss';
+
 import Slider from './slider/slider';
-import sliderData from '@/data/sliderData';
-import infoData from '@/data/infoData';
 import Info from './info/info';
+
+import { sliderData, infoData } from '@/data';
 
 export default function About() {
   return (

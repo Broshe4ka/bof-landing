@@ -83,12 +83,26 @@
     opacity: 0;
     visibility: hidden;
 
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
 
     transition: var(--transition-ease);
   }
 
   &__item {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    .select:hover & {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{($i - 1) * 0.1}s;
+      }
+    }
   }
 
   &__link {
@@ -101,7 +115,7 @@
 
     line-height: 100%;
 
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
 
     background: var(--bg-button--hovered);
   }
@@ -147,7 +161,6 @@
     background: var(--bg-button--hovered);
 
     transition: var(--transition-ease) opacity;
-    backdrop-filter: blur(0.25rem);
     z-index: -1;
   }
 

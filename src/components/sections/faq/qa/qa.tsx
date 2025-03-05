@@ -1,15 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import styles from './qa.module.scss';
 
-interface faqDataProps {
-  id: number;
-  question: string;
-  answer: string;
-}
+import { useState } from 'react';
 
-export default function Qa(props: faqDataProps) {
+import { FaqDataProps } from '@/types';
+
+export default function Qa(props: FaqDataProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

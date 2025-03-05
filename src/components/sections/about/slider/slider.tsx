@@ -1,15 +1,10 @@
 import styles from './slider.module.scss';
+
 import Marquee from 'react-fast-marquee';
 
-interface sliderProps {
-  id: number;
-  icon: string;
-  title: string;
-  description: string;
-  images: string[];
-}
+import { SliderProps } from '@/types';
 
-export default function Slider(props: sliderProps) {
+export default function Slider(props: SliderProps) {
   return (
     <section className={styles.content}>
       <div className={styles.content__info}>

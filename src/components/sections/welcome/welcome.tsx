@@ -1,4 +1,5 @@
 import styles from './welcome.module.scss';
+
 import ButtonDefault from '@/components/ui/button/default/button';
 import ButtonTransparent from '@/components/ui/button/transparent/button';
 

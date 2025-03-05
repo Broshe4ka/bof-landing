@@ -1,7 +1,9 @@
 import styles from './footer.module.scss';
+
 import Link from 'next/link';
 
-import socialsData from '@/data/socialsData';
+import { socialsData } from '@/data';
+import { SocialsData } from '@/types';
 
 export default function Footer() {
   return (
@@ -34,13 +36,13 @@ export default function Footer() {
           </li>
         </ul>
         <ul className={styles.socials}>
-          {socialsData.map(({ id, name, url, icon }) => {
+          {socialsData.map((props: SocialsData) => {
             return (
-              <li key={id}>
-                <a href={url}>
+              <li key={props.id}>
+                <a href={props.url}>
                   <img
-                    src={icon}
-                    alt={'Иконка' + name}
+                    src={props.icon}
+                    alt={'Иконка' + props.name}
                     className={styles.socials__img}
                   />
                 </a>
