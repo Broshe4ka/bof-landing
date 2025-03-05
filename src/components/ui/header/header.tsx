@@ -4,11 +4,11 @@ import linksData from '@/data/linksData';
 import socialsData from '@/data/socialsData';
 import Link from 'next/link';
 
-interface linksDataProps {
-  authClear: string;
-  authSubSeason: string;
-  authSubMounthly: string;
-}
+// interface linksDataProps {
+//   authClear: string;
+//   authSubSeason: string;
+//   authSubMounthly: string;
+// }
 
 interface socialsDataProps {
   id: number;

@@ -1,4 +1,3 @@
-import infoData from '@/data/infoData';
 import styles from './info.module.scss';
 
 interface infoDataProps {
