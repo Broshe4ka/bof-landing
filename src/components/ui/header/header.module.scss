@@ -13,6 +13,8 @@
 
   z-index: var(--zi-header);
 
+  backdrop-filter: blur(4px);
+
   &__body {
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,6 @@
       bottom: 1rem;
     }
   }
-  backdrop-filter: blur(4px);
 }
 
 .logo {
