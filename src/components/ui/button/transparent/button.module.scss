@@ -16,4 +16,15 @@
 
   color: var(--color-title);
   background: var(--bg-button-transparent);
+
+  transition: var(--transition-ease);
+
+  &:hover {
+    background: var(--bg-button-primary-hover);
+  }
+
+  &__image {
+    max-width: 1.25rem;
+    width: 100%;
+  }
 }

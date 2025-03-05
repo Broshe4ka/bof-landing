@@ -13,7 +13,7 @@ interface infoDataProps {
 export default function Info(props: infoDataProps) {
   return (
     <>
-      <section className={`${styles.info} container`}>
+      <section className={styles.info}>
         <div className={styles.text}>
           <img
             src={props.icon}

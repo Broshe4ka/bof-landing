@@ -1,12 +1,11 @@
 .qa {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
 
   border-radius: 0.5rem;
 
   overflow: hidden;
-  transition: 0.1s ease-in-out background;
+  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   &__title {
     padding: 0.75rem 1rem;
     display: flex;
@@ -31,8 +30,14 @@
     max-height: 0;
     padding: 0 1rem;
     overflow: hidden;
-    transition: max-height 0.1s ease-in-out,
-      padding-bottom 0.1s ease-in-out;
+    transition: max-height 0.3s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      padding-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      padding-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  a {
+    text-decoration: underline;
+    color: var(--link-color);
   }
 }
 
@@ -46,5 +51,6 @@
 
 .open__content {
   max-height: 500px;
+  padding-top: 0.25rem;
   padding-bottom: 0.75rem;
 }

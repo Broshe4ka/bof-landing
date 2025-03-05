@@ -12,7 +12,7 @@ interface sliderProps {
 export default function Slider(props: sliderProps) {
   return (
     <section className={styles.content}>
-      <div className={`${styles.content__info} container`}>
+      <div className={styles.content__info}>
         <img
           src={props.icon}
           alt="Иконка"

@@ -2,6 +2,7 @@ import styles from './header.module.scss';
 import ButtonDefault from '../button/default/button';
 import linksData from '@/data/linksData';
 import socialsData from '@/data/socialsData';
+import Link from 'next/link';
 
 interface linksDataProps {
   authClear: string;
@@ -20,14 +21,14 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`${styles.header__body} container`}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <img
             src="/icons/logo.svg"
             alt="Логоип #BoF"
             className={styles.logo__img}
           />
           <h1 className={styles.logo__title}>#BoF</h1>
-        </div>
+        </Link>
         <ul className={styles.nav}>
           <li className={styles.nav__item}>
             <a href="" className={styles.hover}>

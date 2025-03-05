@@ -6,7 +6,7 @@ import Info from './info/info';
 
 export default function About() {
   return (
-    <section className={`${styles.about} section`}>
+    <section className={`${styles.about} container section`}>
       <h2 className="section__title">Давайте знакомиться!</h2>
 
       <div className={styles.about__wrapper}>

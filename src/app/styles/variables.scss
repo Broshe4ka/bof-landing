@@ -5,8 +5,11 @@
     rgba(14, 14, 14, 0) 0%,
     #0e0e0e 100%
   );
+
   --bg-button-primary: #fff;
+  --bg-button-primary-hover: #d5d5d5;
   --bg-button-transparent: transparent;
+
   --bg-gradient-bubble: radial-gradient(
     50% 50% at 50% 50%,
     rgba(255, 128, 0, 0.08) 0%,
@@ -42,12 +45,7 @@
   --color-subtitle: #adadad;
   --color-text: #cccccc;
   --color-text-dark: #7d7d7d;
-
-  --screen-large: 2560px;
-  --screen-default: 1920px;
-  --screen-medium: 1440px;
-  --screen-small: 992px;
-  --screen-mobile: 767px;
+  --link-color: #ff5a00;
 
   --transition-ease: 0.3s ease;
 
@@ -58,9 +56,24 @@
   --text-title: 2.5rem;
   --text-subtitle: 2rem;
   --text-medium: 1.25rem;
-  --font-size: 16px;
 
-  @media (max-width: var(--screen-medium)) {
-    // --font-size: 16px;
+  --screen-default: 1920px;
+  --screen-laptop: 1440px;
+  --screen-tablet: 992px;
+  --screen-mobile: 767px;
+
+  --font-size: 24px;
+
+  @media (max-width: 1920px) {
+    --font-size: 20px;
+  }
+  @media (max-width: 1440px) {
+    --font-size: 16px;
+  }
+  @media (max-width: 992px) {
+    --font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    --font-size: 12px;
   }
 }
