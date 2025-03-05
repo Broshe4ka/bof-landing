@@ -1,17 +1,23 @@
+'use client';
+
 import styles from './header.module.scss';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import ButtonDefault from '../button/default/button';
 import Burger from './burger/burger';
 
-import { linksData, socialsData } from '@/data';
-import { SocialsData } from '@/types';
+import { linksData, navData, socialsData } from '@/data';
+import { NavData, SocialsData } from '@/types';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <header className={styles.header}>
-        <div className={`${styles.header__body} container`}>
+        <Burger isOpen={isOpen} />
+        <nav className={`${styles.header__body} container`}>
           <Link href="/" className={styles.logo}>
             <img
               src="/icons/logo.svg"
@@ -21,26 +27,13 @@ export default function Header() {
             <h1 className={styles.logo__title}>#BoF</h1>
           </Link>
           <ul className={styles.nav}>
-            <li className={styles.nav__item}>
-              <a href="" className={styles.hover}>
-                О проекте
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="" className={styles.hover}>
-                Подписка
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="" className={styles.hover}>
-                Карта сервера
-              </a>
-            </li>
-            <li className={styles.nav__item}>
-              <a href="" className={styles.hover}>
-                Ответы на вопросы
-              </a>
-            </li>
+            {navData.map((props: NavData) => (
+              <li key={props.id} className={styles.nav__item}>
+                <a href={props.url} className={styles.hover}>
+                  {props.name}
+                </a>
+              </li>
+            ))}
             <li className={styles.nav__item}>
               <div
                 className={`${styles.select} ${styles.hover}`}
@@ -80,10 +73,22 @@ export default function Header() {
               </div>
             </li>
           </ul>
-          <ButtonDefault href={linksData.authClear}>
-            Авторизация
-          </ButtonDefault>
-        </div>
+          <div className={styles.header__buttons}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className={`${styles.burger} ${
+                isOpen ? styles.open : ''
+              }`}
+            >
+              <span className={styles.burger__row}></span>
+              <span className={styles.burger__row}></span>
+              <span className={styles.burger__row}></span>
+            </button>
+            <ButtonDefault href={linksData.authClear}>
+              Авторизация
+            </ButtonDefault>
+          </div>
+        </nav>
       </header>
     </>
   );

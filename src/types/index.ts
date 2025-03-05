@@ -5,6 +5,12 @@ export interface LinksData {
   mapLink: string;
 }
 
+export interface NavData {
+  id: number;
+  name: string;
+  url: string;
+}
+
 export interface SubProps {
   id: number;
   period: string;

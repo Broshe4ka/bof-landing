@@ -24,6 +24,8 @@ export default function Map() {
           <span>Кликните чтобы начать взаимодействие</span>
         </div>
         <iframe
+          loading="lazy"
+          title="BlueMap - интерактивная карта"
           className={`${styles.mapIframe} ${
             isActive ? styles.isActive : ''
           }`}

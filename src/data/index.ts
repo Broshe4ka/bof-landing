@@ -5,6 +5,29 @@ export const linksData = {
   mapLink: '',
 };
 
+export const navData = [
+  {
+    id: 1,
+    name: 'О проекте',
+    url: '#',
+  },
+  {
+    id: 2,
+    name: 'Подписка',
+    url: '#',
+  },
+  {
+    id: 3,
+    name: 'Карта сервера',
+    url: '#',
+  },
+  {
+    id: 4,
+    name: 'Ответы на вопросы',
+    url: '#',
+  },
+];
+
 export const subData = [
   {
     id: 1,

@@ -18,6 +18,9 @@
   &__icon {
     max-width: 2rem;
     width: 100%;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &__text {
     max-width: 50rem;
@@ -72,7 +75,23 @@
     );
   }
   &__slide {
+    width: 25vw;
+
     border-radius: 0.75rem;
     margin-left: 1rem;
+
+    aspect-ratio: 16/9;
+
+    @media (max-width: 1200px) {
+      width: 33vw;
+    }
+
+    @media (max-width: 992) {
+      width: 50vw;
+    }
+
+    @media (max-width: 767) {
+      width: 75vw;
+    }
   }
 }

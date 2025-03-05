@@ -26,12 +26,29 @@
       bottom: 1rem;
     }
   }
+  &__buttons {
+    z-index: calc(var(--zi-header) + 2);
+    button {
+      display: none;
+      @media (max-width: 1200px) {
+        display: flex;
+      }
+    }
+    a {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 0.675rem;
+
+  z-index: calc(var(--zi-header) + 2);
+
   &__img {
     max-width: 2.5rem;
     width: 100%;
@@ -50,6 +67,10 @@
 
   &__item {
     display: flex;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 }
 
@@ -131,6 +152,40 @@
   }
 }
 
+.burger {
+  width: 2.5rem;
+  padding: 0.255rem;
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border-radius: 0.5rem;
+  border: none;
+
+  aspect-ratio: 1/1;
+
+  background: transparent;
+  &__row {
+    height: 3px;
+
+    border-radius: 1rem;
+
+    background: var(--color-title);
+
+    transition: width var(--transition-ease);
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        width: #{100 -
+          ($i - 1) *
+          33%}; // Ширина уменьшается: 100%, 67%, 34%
+      }
+    }
+  }
+}
+
 .hover {
   font-style: normal;
   font-weight: 600;
@@ -166,5 +221,11 @@
 
   &:hover::before {
     opacity: 1;
+  }
+}
+
+.open .burger {
+  &__row {
+    width: 100%;
   }
 }

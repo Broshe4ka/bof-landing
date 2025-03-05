@@ -32,6 +32,7 @@ export default function Welcome() {
       </div>
       <div className={styles.background}>
         <img
+          loading="lazy"
           src="/images/bg.png"
           alt="Задний фон"
           className={styles.background__image}

@@ -32,7 +32,8 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "@parcel/watcher"
+      "@parcel/watcher",
+      "sharp"
     ]
   }
 }

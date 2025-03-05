@@ -1,4 +1,6 @@
 :root {
+  -webkit-tap-highlight-color: transparent;
+
   --bg-primary: #0e0e0e;
   --bg-gradient-primary: linear-gradient(
     180deg,
@@ -36,6 +38,7 @@
 
   --bg-button: transparent;
   --bg-button--hovered: #ffffff15;
+  --bg-button--active: #ffffff60;
 
   --color-title: #fff;
   --color-subtitle: #adadad;
@@ -43,7 +46,7 @@
   --color-text-dark: #7d7d7d;
   --link-color: #ff5a00;
 
-  --transition-ease: 0.3s ease;
+  --transition-ease: 0.3s ease-in-out;
 
   --bg-dark: #242424;
 
@@ -70,6 +73,8 @@
     --font-size: 16px;
   }
   @media (max-width: 767px) {
-    --font-size: 12px;
+    --font-size: 16px;
+    --text-title: 2rem;
+    --text-subtitle: 1.25rem;
   }
 }

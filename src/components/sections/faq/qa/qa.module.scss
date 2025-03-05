@@ -5,7 +5,9 @@
   border-radius: 0.5rem;
 
   overflow: hidden;
-  transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  transition: var(--transition-ease);
+
   &__title {
     padding: 0.75rem 1rem;
     display: flex;
@@ -30,10 +32,9 @@
     max-height: 0;
     padding: 0 1rem;
     overflow: hidden;
-    transition: max-height 0.3s
-        cubic-bezier(0.25, 0.46, 0.45, 0.94),
-      padding-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-      padding-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: max-height var(--transition-ease),
+      padding-top var(--transition-ease),
+      padding-bottom var(--transition-ease);
   }
   a {
     text-decoration: underline;
