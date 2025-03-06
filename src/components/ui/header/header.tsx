@@ -32,9 +32,13 @@ export default function Header() {
           styles.header
         }`}
       >
-        <Burger isOpen={isOpen} />
+        <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
         <nav className={`${styles.header__body} container`}>
-          <Link href="/#welcome" className={styles.logo}>
+          <Link
+            onClick={() => setIsOpen(false)}
+            href="/#welcome"
+            className={styles.logo}
+          >
             <img
               src="/icons/logo.svg"
               alt="Логоип #BoF"

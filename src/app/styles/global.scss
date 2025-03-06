@@ -52,6 +52,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+
   scroll-margin-top: 25vh;
 
   &__title {
@@ -64,6 +65,10 @@ body {
     font-weight: 900;
     line-height: 120%;
     letter-spacing: -1.6px;
+  }
+
+  @media (max-width: 767px) and (orientation: portrait) {
+    scroll-margin-top: 1vh;
   }
 }
 

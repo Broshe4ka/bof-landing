@@ -7,9 +7,13 @@ import { NavData, SocialsData } from '@/types';
 
 interface BurgerProps {
   isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
-export default function Burger({ isOpen }: BurgerProps) {
+export default function Burger({
+  isOpen,
+  setIsOpen,
+}: BurgerProps) {
   return (
     <div
       className={`${styles.burger}  
@@ -23,7 +27,11 @@ export default function Burger({ isOpen }: BurgerProps) {
           {/* Inside link */}
           {navData.map((props: NavData) => (
             <li key={props.id}>
-              <a href={props.url} className={styles.link}>
+              <a
+                onClick={() => setIsOpen(false)}
+                href={props.url}
+                className={styles.link}
+              >
                 {props.name}
               </a>
             </li>
