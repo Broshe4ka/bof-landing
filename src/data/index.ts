@@ -96,6 +96,8 @@ export const sliderData = [
       '/images/a2.webp',
       '/images/a3.webp',
       '/images/a4.webp',
+      '/images/a5.webp',
+      '/images/a6.webp',
     ],
   },
   {
@@ -109,6 +111,10 @@ export const sliderData = [
       '/images/c2.webp',
       '/images/c3.webp',
       '/images/c4.webp',
+      '/images/c5.webp',
+      '/images/c6.webp',
+      '/images/c7.webp',
+      '/images/c8.webp',
     ],
   },
 ];
