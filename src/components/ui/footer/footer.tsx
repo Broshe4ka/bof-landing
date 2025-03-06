@@ -20,12 +20,15 @@ export default function Footer() {
         </div>
         <ul className={styles.footer__nav}>
           <li>
-            <Link href="#" className={styles.link}>
+            <Link
+              href="/privacy-policy"
+              className={styles.link}
+            >
               Политика конфиденциальности
             </Link>
           </li>
           <li>
-            <Link href="#" className={styles.link}>
+            <Link href="/terms-of-use" className={styles.link}>
               Пользовательское соглашение
             </Link>
           </li>

@@ -59,9 +59,9 @@ export default function Header() {
           <ul className={styles.nav}>
             {navData.map((props: NavData) => (
               <li key={props.id} className={styles.nav__item}>
-                <a href={props.url} className={styles.hover}>
+                <Link href={props.url} className={styles.hover}>
                   {props.name}
-                </a>
+                </Link>
               </li>
             ))}
             <li className={styles.nav__item}>

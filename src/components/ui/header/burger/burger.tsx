@@ -4,6 +4,7 @@ import ButtonDefault from '../../button/default/button';
 
 import { linksData, navData, socialsData } from '@/data';
 import { NavData, SocialsData } from '@/types';
+import Link from 'next/link';
 
 interface BurgerProps {
   isOpen: boolean;
@@ -28,13 +29,13 @@ export default function Burger({
           {/* Inside link */}
           {navData.map((props: NavData) => (
             <li key={props.id}>
-              <a
+              <Link
                 onClick={() => setIsOpen(false)}
                 href={props.url}
                 className={styles.link}
               >
                 {props.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

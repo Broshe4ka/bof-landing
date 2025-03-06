@@ -1,0 +1,36 @@
+.error {
+  margin-top: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 1;
+
+  gap: 2rem;
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+
+    color: var(--color-title);
+
+    strong {
+      font-weight: 900;
+    }
+  }
+
+  &__img {
+    display: flex;
+    order: -1;
+    max-width: 6rem;
+    width: 100%;
+  }
+}
