@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
 Setup project:
@@ -13,4 +11,15 @@ For build:
 
 ```bash
 pnpm dev
+```
+
+The following links are located in this directory `/src/data/index.ts` :
+
+```ts
+export const linksData = {
+  authClear: '',
+  authSubSeason: '',
+  authSubMounthly: '',
+  mapLink: '',
+};
 ```
