@@ -22,6 +22,8 @@ export default function Slider(props: SliderProps) {
       </div>
 
       <Marquee
+        pauseOnHover={true}
+        pauseOnClick={true}
         speed={60}
         className={`${styles.slider} container`}
       >
