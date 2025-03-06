@@ -16,9 +16,11 @@ export default function Info(props: InfoDataProps) {
             <h2 className="title">{props.title}</h2>
             <h2 className="subtitle">{props.subtitle}</h2>
             {props.text.map((text, index) => (
-              <p className="text" key={index}>
-                {text}
-              </p>
+              <p
+                className="text"
+                key={index}
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
             ))}
           </div>
         </div>

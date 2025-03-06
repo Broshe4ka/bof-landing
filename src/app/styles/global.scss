@@ -98,9 +98,12 @@ body {
   color: var(--color-subtitle);
 }
 .text {
-  font-weight: 700;
   line-height: 140%;
   letter-spacing: -0.64px;
 
   color: var(--color-text-dark);
+}
+
+.mdx {
+  margin-top: 8.5rem;
 }
