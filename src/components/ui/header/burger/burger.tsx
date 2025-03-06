@@ -16,6 +16,7 @@ export default function Burger({
 }: BurgerProps) {
   return (
     <div
+      onClick={() => setIsOpen(false)}
       className={`${styles.burger}  
       ${isOpen ? styles.open : ''} container`}
     >

@@ -230,3 +230,7 @@
 .scrolled {
   backdrop-filter: blur(4px);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -39,7 +39,7 @@ export const subData = [
       'Закртый доступ к тестовым серверам',
     ],
     url: linksData.authSubSeason,
-    image: '/images/sniffer.png',
+    image: '/images/sniffer.webp',
     bg: 'var(--bg-gradient-season)',
   },
   {
@@ -52,7 +52,7 @@ export const subData = [
       'Доступ к общим серверам',
     ],
     url: linksData.authSubMounthly,
-    image: '/images/cow.png',
+    image: '/images/cow.webp',
     bg: 'var(--bg-gradient-mounth)',
   },
 ];
@@ -92,10 +92,10 @@ export const sliderData = [
     description:
       'На нашем счету 5 прекраснейших сезонов, где каждый последующий лучше предыдущего как с технической части, так и с креативной, благодаря нашим любимым игрокам!',
     images: [
-      '/images/a1.png',
-      '/images/a2.png',
-      '/images/a3.png',
-      '/images/a4.png',
+      '/images/a1.webp',
+      '/images/a2.webp',
+      '/images/a3.webp',
+      '/images/a4.webp',
     ],
   },
   {
@@ -105,10 +105,10 @@ export const sliderData = [
     description:
       'Наш дружный сервер позволит вам познакомиться с уникальными людьми и всегда быть в центре событий. По сей день наши первые игроки продолжают вместе общаться, играть и создавать.',
     images: [
-      '/images/c1.png',
-      '/images/c2.png',
-      '/images/c3.png',
-      '/images/c4.png',
+      '/images/c1.webp',
+      '/images/c2.webp',
+      '/images/c3.webp',
+      '/images/c4.webp',
     ],
   },
 ];
@@ -125,7 +125,7 @@ export const infoData = [
       'За выполнение квестов вы получите уникальные предметы, которые сможете использовать в дальнейшей игре.Один из таких предметов: Книга рецептов алкоголя.',
       'В будущем вас ждут новые сюжетные ивенты, в которых вы с другими игроками сможете принять участие, выполняя различные квесты, за которые вы будете награждены уникальными предметами. ',
     ],
-    image: '/images/quests.png',
+    image: '/images/quests.webp',
   },
   {
     id: 2,
@@ -137,7 +137,7 @@ export const infoData = [
       'Центральным, как можно понять, является хаб, откуда вы начинаете свое путешествие и используете для перемещения между двумя другими.',
       'Ад у миров разделён, а энд является общим. Для того, чтобы попасть в ад - просто постройте портал в мире, в ад которого хотите попасть. А вот как попасть в энд... Это вы узнаете чуть позже :3',
     ],
-    image: '/images/quests.png',
+    image: '/images/quests.webp',
   },
 ];
 

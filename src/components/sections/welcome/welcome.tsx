@@ -32,7 +32,7 @@ export default function Welcome() {
       <div className={styles.background}>
         <img
           loading="lazy"
-          src="/images/bg.png"
+          src="/images/bg.webp"
           alt="Задний фон"
           className={styles.background__image}
         />

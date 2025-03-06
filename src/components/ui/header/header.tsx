@@ -15,6 +15,16 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    isOpen
+      ? document.body.classList.add(styles['no-scroll'])
+      : document.body.classList.remove(styles['no-scroll']);
+
+    return () => {
+      document.body.classList.remove(styles['no-scroll']);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const scrollToChange = 120;
