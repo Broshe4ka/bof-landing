@@ -19,6 +19,10 @@ export default function Subs() {
           <Sub key={sub.id} {...sub} />
         ))}
       </div>
+      <div
+        className="light"
+        style={{ right: '-50%', top: '-35%' }}
+      ></div>
     </section>
   );
 }

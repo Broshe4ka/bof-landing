@@ -50,9 +50,13 @@ body {
   @media (max-width: 767px) {
     gap: 6rem;
   }
+
+  overflow: hidden;
 }
 
 .section {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,4 +110,25 @@ body {
 
 .mdx {
   margin-top: 8.5rem;
+}
+
+.light {
+  width: 64rem;
+  height: 64rem;
+
+  border-radius: 64rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 128, 0, 0.08) 0%,
+    rgba(255, 128, 0, 0) 99.99%
+  );
+
+  position: absolute;
+
+  z-index: -1;
+
+  @media (max-width: 1200px) {
+    width: 32rem;
+    height: 32rem;
+  }
 }

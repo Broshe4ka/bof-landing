@@ -7,13 +7,15 @@
   width: 100%;
   height: 100lvh;
 
-  background: var(--bg-primary);
+  background: var(--bg-burger);
+
+  overflow: hidden;
 
   transition: visibility var(--transition-ease),
     opacity var(--transition-ease);
 
   &__wrapper {
-    overflow: auto;
+    overflow: hidden;
 
     width: 100%;
     height: 100%;

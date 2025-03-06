@@ -53,6 +53,15 @@ export default function Burger({
             </li>
           ))}
         </ul>
+        <div
+          className="light"
+          style={{
+            right: '-50%',
+            top: '-50%',
+            width: '64rem',
+            height: '64rem',
+          }}
+        ></div>
       </nav>
     </div>
   );

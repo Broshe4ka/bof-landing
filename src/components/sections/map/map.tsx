@@ -36,6 +36,10 @@ export default function Map() {
           allowFullScreen
         />
       </div>
+      <div
+        className="light"
+        style={{ left: '-50%', top: '-5%' }}
+      ></div>
     </section>
   );
 }

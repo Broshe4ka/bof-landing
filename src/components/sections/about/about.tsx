@@ -21,6 +21,18 @@ export default function About() {
           <Info key={info.id} {...info} />
         ))}
       </div>
+      <div
+        className="light"
+        style={{ left: '-50%', top: '-5%' }}
+      ></div>
+      <div
+        className="light"
+        style={{ right: '-50%', top: '45%' }}
+      ></div>
+      <div
+        className="light"
+        style={{ left: '-50%', top: '65%' }}
+      ></div>
     </section>
   );
 }
