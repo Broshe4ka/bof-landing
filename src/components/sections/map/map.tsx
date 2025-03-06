@@ -7,7 +7,10 @@ import { useState } from 'react';
 export default function Map() {
   const [isActive, setIsActive] = useState(false);
   return (
-    <section className={`${styles.map} section container`}>
+    <section
+      id="map"
+      className={`${styles.map} section container`}
+    >
       <h2 className="section__title">
         Оцените постройки наших игроков прямо из браузера!
       </h2>

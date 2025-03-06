@@ -6,7 +6,7 @@ import { faqData } from '@/data';
 
 export default function Faq() {
   return (
-    <div className={`${styles.faq} section container`}>
+    <div id="faq" className={`${styles.faq} section container`}>
       <h2 className="section__title">
         У вас остались вопросы?
       </h2>

@@ -5,7 +5,7 @@ import ButtonCopy from '@/components/ui/button/copy/button';
 
 export default function Welcome() {
   return (
-    <section className={styles.section}>
+    <section id="welcome" className={styles.section}>
       <div className={`${styles.section__content} container`}>
         <div className={styles.content}>
           <h2 className={styles.content__title}>

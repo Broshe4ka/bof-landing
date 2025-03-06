@@ -9,22 +9,22 @@ export const navData = [
   {
     id: 1,
     name: 'О проекте',
-    url: '#',
+    url: '#about',
   },
   {
     id: 2,
     name: 'Подписка',
-    url: '#',
+    url: '#subs',
   },
   {
     id: 3,
     name: 'Карта сервера',
-    url: '#',
+    url: '#map',
   },
   {
     id: 4,
     name: 'Ответы на вопросы',
-    url: '#',
+    url: '#faq',
   },
 ];
 

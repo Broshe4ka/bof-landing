@@ -34,7 +34,7 @@ export default function Header() {
       >
         <Burger isOpen={isOpen} />
         <nav className={`${styles.header__body} container`}>
-          <Link href="/" className={styles.logo}>
+          <Link href="/#welcome" className={styles.logo}>
             <img
               src="/icons/logo.svg"
               alt="Логоип #BoF"
