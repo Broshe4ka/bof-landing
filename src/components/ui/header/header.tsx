@@ -2,7 +2,7 @@
 
 import styles from './header.module.scss';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import ButtonDefault from '../button/default/button';
 import Burger from './burger/burger';
@@ -12,10 +12,26 @@ import { NavData, SocialsData } from '@/types';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const scrollToChange = 120;
+      setIsScrolled(scrollPosition > scrollToChange);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () =>
+      window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <header className={styles.header}>
+      <header
+        className={`${isScrolled ? styles.scrolled : ''} ${
+          styles.header
+        }`}
+      >
         <Burger isOpen={isOpen} />
         <nav className={`${styles.header__body} container`}>
           <Link href="/" className={styles.logo}>

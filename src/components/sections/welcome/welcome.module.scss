@@ -7,8 +7,16 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) and (orientation: portrait) {
     aspect-ratio: 4/3;
+  }
+
+  @media (max-width: 767px) {
+    height: 100lvb;
+  }
+
+  @media (max-width: 767px) and (orientation: landscape) {
+    height: auto;
   }
 
   &__content {
@@ -33,11 +41,8 @@
     }
   }
 
-  @media (max-width: 767px) {
-    padding: {
-      top: 8.5rem;
-      bottom: 8.5rem;
-    }
+  @media (max-width: 767px) and (orientation: landscape) {
+    // padding-top: 2.5rem;
   }
 
   &__title {
@@ -68,10 +73,12 @@
 
     @media (max-width: 540px) {
       flex-direction: column;
+      gap: 1rem;
     }
 
-    a {
-      max-width: 10.75rem;
+    a,
+    button {
+      max-width: 12rem;
       width: 100%;
       text-align: center;
 

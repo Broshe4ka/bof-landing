@@ -14,6 +14,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
 }
 
 img {
@@ -22,4 +23,6 @@ img {
 
 button {
   cursor: pointer;
+  outline: none;
+  font-size: inherit;
 }

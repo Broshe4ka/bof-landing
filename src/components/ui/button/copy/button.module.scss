@@ -20,11 +20,26 @@
   transition: var(--transition-ease);
 
   &:hover {
-    background: var(--bg-button-primary-hover);
+    background: var(--bg-button-transparent-hover);
+  }
+
+  &:active {
+    transition: none;
+    background: var(--bg-button-transparent-active);
   }
 
   &__image {
     max-width: 1.25rem;
     width: 100%;
+  }
+}
+
+.copied {
+  &:hover {
+    background: var(--bg-button-transparent);
+  }
+
+  &:active {
+    background: var(--bg-button-transparent);
   }
 }

@@ -23,6 +23,11 @@
     background: var(--bg-button-primary-hover);
   }
 
+  &:active {
+    transition: none;
+    background: var(--bg-button-primary-active);
+  }
+
   &__image {
     max-width: 1.25rem;
     width: 100%;

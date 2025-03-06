@@ -22,7 +22,7 @@ export default function Slider(props: SliderProps) {
       </div>
 
       <Marquee
-        speed={40}
+        speed={60}
         className={`${styles.slider} container`}
       >
         {props.images.map((image, index) => (
