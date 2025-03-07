@@ -1,5 +1,5 @@
 export const linksData = {
-  authClear: 'https://google.com',
+  authClear: '',
   authSubSeason: '',
   authSubMounthly: '',
   mapLink: '',

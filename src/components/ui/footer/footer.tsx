@@ -16,7 +16,7 @@ export default function Footer() {
             className={styles.logo}
           />
           {/* Добавить ссылку на почту */}
-          <a href="№">Контакты</a>
+          <a href="mailto:support@bofgg.ru">Контакты</a>
         </div>
         <ul className={styles.footer__nav}>
           <li>

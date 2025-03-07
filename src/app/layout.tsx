@@ -10,7 +10,7 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: '#BoF | Main Page',
+  title: '#BoF - Приватный Minecraft Сервер',
   description: 'Description',
   icons: '/icons/logo.svg',
 };

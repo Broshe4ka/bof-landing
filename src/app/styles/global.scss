@@ -110,6 +110,28 @@ body {
 
 .mdx {
   margin-top: 8.5rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-bottom: 1.75rem;
+  }
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  br {
+    margin: 1rem 0;
+  }
 }
 
 .light {
