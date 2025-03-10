@@ -3,6 +3,7 @@ import styles from './sub.module.scss';
 import ButtonDefault from '@/components/ui/button/default/button';
 
 import { SubProps } from '@/types';
+import Image from 'next/image';
 
 export default function Sub(props: SubProps) {
   return (
@@ -29,7 +30,9 @@ export default function Sub(props: SubProps) {
         <ButtonDefault href={props.url}>
           Приобрести
         </ButtonDefault>
-        <img
+        <Image
+          width={500}
+          height={500}
           src={props.image}
           alt="Маскот"
           className={styles.sub__img}

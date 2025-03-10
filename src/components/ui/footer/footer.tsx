@@ -4,13 +4,16 @@ import Link from 'next/link';
 
 import { socialsData } from '@/data';
 import { SocialsData } from '@/types';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className={`${styles.footer} container`}>
       <div className={styles.footer__header}>
         <div className={styles.footer__logo}>
-          <img
+          <Image
+            width={40}
+            height={40}
             src="/icons/logo.svg"
             alt=""
             className={styles.logo}
@@ -43,7 +46,9 @@ export default function Footer() {
             return (
               <li key={props.id}>
                 <a href={props.url}>
-                  <img
+                  <Image
+                    width={48}
+                    height={48}
                     src={props.icon}
                     alt={'Иконка' + props.name}
                     className={styles.socials__img}

@@ -5,6 +5,7 @@ import ButtonDefault from '../../button/default/button';
 import { linksData, navData, socialsData } from '@/data';
 import { NavData, SocialsData } from '@/types';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BurgerProps {
   isOpen: boolean;
@@ -44,7 +45,9 @@ export default function Burger({
           {socialsData.map((props: SocialsData) => (
             <li key={props.id}>
               <a href={props.url}>
-                <img
+                <Image
+                  width={32}
+                  height={32}
                   src={props.icon}
                   alt={'Логотип ' + props.name}
                   className={styles.socials__img}

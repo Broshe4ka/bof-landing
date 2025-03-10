@@ -3,12 +3,15 @@ import styles from './slider.module.scss';
 import Marquee from 'react-fast-marquee';
 
 import { SliderProps } from '@/types';
+import Image from 'next/image';
 
 export default function Slider(props: SliderProps) {
   return (
     <section className={styles.content}>
       <div className={styles.content__info}>
-        <img
+        <Image
+          width={48}
+          height={48}
           src={props.icon}
           alt="Иконка"
           className={styles.info__icon}
@@ -28,7 +31,9 @@ export default function Slider(props: SliderProps) {
         className={`${styles.slider} container`}
       >
         {props.images.map((image, index) => (
-          <img
+          <Image
+            width={512}
+            height={288}
             key={index}
             src={image}
             alt="Слайд"

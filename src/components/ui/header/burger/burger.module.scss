@@ -82,6 +82,7 @@
 
   &__img {
     max-width: 2rem;
+    height: auto;
     width: 100%;
 
     transition: filter var(--transition-ease);

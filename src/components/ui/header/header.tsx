@@ -9,6 +9,7 @@ import Burger from './burger/burger';
 
 import { linksData, navData, socialsData } from '@/data';
 import { NavData, SocialsData } from '@/types';
+import Image from 'next/image';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +50,9 @@ export default function Header() {
             href="/#welcome"
             className={styles.logo}
           >
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/icons/logo.svg"
               alt="Логоип #BoF"
               className={styles.logo__img}
@@ -71,7 +74,9 @@ export default function Header() {
                 <p className={styles.select__title}>
                   Наши ресурсы
                 </p>
-                <img
+                <Image
+                  width={16}
+                  height={16}
                   src="/icons/select.svg"
                   alt="Select Down"
                   className={styles.select__img}
@@ -87,7 +92,9 @@ export default function Header() {
                           href={props.url}
                           className={styles.select__link}
                         >
-                          <img
+                          <Image
+                            width={20}
+                            height={20}
                             src={props.icon}
                             alt={'Иконка' + props.name}
                             className={styles.link__img}

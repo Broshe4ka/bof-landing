@@ -2,7 +2,7 @@ export const linksData = {
   authClear: '',
   authSubSeason: '',
   authSubMounthly: '',
-  mapLink: '',
+  mapLink: 'localhost:8100',
 };
 
 export const navData = [
@@ -66,7 +66,7 @@ export const subData = [
     fetureList: [
       'На данный момент проходит бесплатное бета-тестирование! На релизе доступ на сервер будет платным.',
     ],
-    url: linksData.authSubMounthly,
+    url: linksData.authSubSeason,
     image: '/images/sniffer.webp',
     bg: 'var(--bg-gradient-mounth)',
   },

@@ -3,6 +3,7 @@
 import styles from './map.module.scss';
 
 import { useState } from 'react';
+import { linksData } from '@/data';
 
 export default function Map() {
   const [isActive, setIsActive] = useState(false);
@@ -32,7 +33,7 @@ export default function Map() {
           className={`${styles.mapIframe} ${
             isActive ? styles.isActive : ''
           }`}
-          src="http://localhost:8100"
+          src={linksData.mapLink}
           allowFullScreen
         />
       </div>

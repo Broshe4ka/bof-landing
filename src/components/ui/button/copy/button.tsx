@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styles from './button.module.scss';
 
 import { ReactNode, useState } from 'react';
@@ -35,7 +36,12 @@ export default function ButtonCopy({
         styles.button
       }`}
     >
-      <img src="/icons/copy.svg" alt="Копировать" />
+      <Image
+        width={20}
+        height={20}
+        src="/icons/copy.svg"
+        alt="Копировать"
+      />
       {isCopied ? ` IP Скопирован!` : children}
     </button>
   );

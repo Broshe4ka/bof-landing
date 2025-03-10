@@ -113,6 +113,7 @@
   &__img {
     max-width: 2rem;
     width: 100%;
+    height: auto;
 
     transition: var(--transition-ease) filter;
 
@@ -132,4 +133,6 @@
 
 .logo {
   max-width: 2.5rem;
+  width: 100%;
+  height: auto;
 }

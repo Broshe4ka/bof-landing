@@ -49,10 +49,11 @@
   }
   &__img {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     right: -5%;
-
-    max-height: 7.5rem;
+    max-width: 10rem;
+    height: auto;
+    // aspect-ratio: 1 / 1;
   }
 }
 

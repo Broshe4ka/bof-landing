@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './styles/not-found.module.scss';
 
 export default function NotFound() {
@@ -11,7 +12,9 @@ export default function NotFound() {
           Не найдено. =(
         </span>
       </div>
-      <img
+      <Image
+        width={240}
+        height={240}
         className={styles.error__img}
         src="/images/sniffer.webp"
         alt=""

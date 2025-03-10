@@ -1,13 +1,16 @@
 import { InfoDataProps } from '@/types';
 
 import styles from './info.module.scss';
+import Image from 'next/image';
 
 export default function Info(props: InfoDataProps) {
   return (
     <>
       <section className={styles.info}>
         <div className={styles.text}>
-          <img
+          <Image
+            width={48}
+            height={48}
             src={props.icon}
             alt="Иконка"
             className={styles.text__icon}
@@ -25,7 +28,9 @@ export default function Info(props: InfoDataProps) {
           </div>
         </div>
         <div className={styles.image}>
-          <img
+          <Image
+            width={1024}
+            height={1024}
             src={props.image}
             alt="Превью"
             className={styles.image__picture}
