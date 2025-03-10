@@ -16,7 +16,7 @@ export default function Sub(props: SubProps) {
             Подписка на {props.period}
           </h3>
           <h4 className={styles.info__price}>
-            {props.price} ₽ / {props.period}
+            {props.price} {props.period}
           </h4>
           <ul className={styles.info__items}>
             {props.fetureList.map((feature, index) => (

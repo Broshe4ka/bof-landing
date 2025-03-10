@@ -43,6 +43,8 @@ body {
 
   padding: 0 0 6rem 0;
 
+  overflow: hidden;
+
   @media (max-width: 992) {
     gap: 8rem;
   }
@@ -50,8 +52,6 @@ body {
   @media (max-width: 767px) {
     gap: 6rem;
   }
-
-  overflow: hidden;
 }
 
 .section {

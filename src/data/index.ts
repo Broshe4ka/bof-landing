@@ -29,30 +29,45 @@ export const navData = [
 ];
 
 export const subData = [
+  // Раскомментить вот это
+
+  // {
+  //   id: 1,
+  //   period: 'сезон',
+  //   price: 'Бесплатновое ₽ /',
+  //   fetureList: [
+  //     'Подписка действительна до конца  сезона',
+  //     'Уникальная роль в дискорде',
+  //     'Доступ к закртым тестовым серверам',
+  //   ],
+  //   url: linksData.authSubSeason,
+  //   image: '/images/sniffer.webp',
+  //   bg: 'var(--bg-gradient-season)',
+  // },
+  // {
+  //   id: 2,
+  //   period: 'месяц',
+  //   price: 'Бесплатновое ₽ /',
+  //   fetureList: [
+  //     'Подписка действительна до конца месяца',
+  //     'Уникальная роль в дискорде',
+  //     'Доступ к общим серверам',
+  //   ],
+  //   url: linksData.authSubMounthly,
+  //   image: '/images/cow.webp',
+  //   bg: 'var(--bg-gradient-mounth)',
+  // },
+
+  // А этот удалить
   {
-    id: 1,
+    id: 3,
     period: 'сезон',
-    price: 'Бесплатновое',
+    price: 'Сейчас проходит бесплатный',
     fetureList: [
-      'Подписка действительна до конца  сезона',
-      'Уникальная роль в дискорде',
-      'Доступ к закртым тестовым серверам',
-    ],
-    url: linksData.authSubSeason,
-    image: '/images/sniffer.webp',
-    bg: 'var(--bg-gradient-season)',
-  },
-  {
-    id: 2,
-    period: 'месяц',
-    price: 'Бесплатновое',
-    fetureList: [
-      'Подписка действительна до конца месяца',
-      'Уникальная роль в дискорде',
-      'Доступ к общим серверам',
+      'На данный момент проходит бесплатное бета-тестирование! На релизе доступ на сервер будет платным.',
     ],
     url: linksData.authSubMounthly,
-    image: '/images/cow.webp',
+    image: '/images/sniffer.webp',
     bg: 'var(--bg-gradient-mounth)',
   },
 ];
