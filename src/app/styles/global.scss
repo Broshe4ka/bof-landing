@@ -39,18 +39,18 @@ body {
   justify-content: start;
   flex-direction: column;
   flex-grow: 1;
-  gap: 16rem;
+  gap: 12rem;
 
   padding: 0 0 6rem 0;
 
   overflow: hidden;
 
   @media (max-width: 992) {
-    gap: 8rem;
+    gap: 6rem;
   }
 
   @media (max-width: 767px) {
-    gap: 6rem;
+    gap: 4rem;
   }
 }
 
