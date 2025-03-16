@@ -3,6 +3,7 @@ import styles from './welcome.module.scss';
 import ButtonDefault from '@/components/ui/button/default/button';
 import ButtonCopy from '@/components/ui/button/copy/button';
 import Image from 'next/image';
+import bgImage from '../../../../public/images/bg.png';
 
 export default function Welcome() {
   return (
@@ -31,10 +32,12 @@ export default function Welcome() {
         </div>
       </div>
       <div className={styles.background}>
-        <Image
+        <img
           width={2560}
           height={1280}
-          priority
+          // placeholder={'blur'}
+          // priority
+          // src={bgImage}
           src="/images/bg.webp"
           alt="Задний фон"
           className={styles.background__image}

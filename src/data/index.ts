@@ -2,7 +2,7 @@ export const linksData = {
   authClear: '',
   authSubSeason: '',
   authSubMounthly: '',
-  mapLink: 'localhost:8100',
+  mapLink: 'http://localhost:8100',
 };
 
 export const navData = [
