@@ -3,7 +3,6 @@ import styles from './welcome.module.scss';
 import ButtonDefault from '@/components/ui/button/default/button';
 import ButtonCopy from '@/components/ui/button/copy/button';
 import Image from 'next/image';
-import bgImage from '../../../../public/images/bg.png';
 
 export default function Welcome() {
   return (
@@ -32,7 +31,7 @@ export default function Welcome() {
         </div>
       </div>
       <div className={styles.background}>
-        <img
+        <Image
           width={2560}
           height={1280}
           // placeholder={'blur'}
