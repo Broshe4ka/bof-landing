@@ -34,9 +34,7 @@ export default function Welcome() {
         <Image
           width={2560}
           height={1280}
-          // placeholder={'blur'}
-          // priority
-          // src={bgImage}
+          priority
           src="/images/bg.webp"
           alt="Задний фон"
           className={styles.background__image}

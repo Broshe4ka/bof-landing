@@ -53,6 +53,7 @@ export default function Header() {
             <Image
               width={40}
               height={40}
+              priority
               src="/icons/logo.svg"
               alt="Логоип #BoF"
               className={styles.logo__img}
