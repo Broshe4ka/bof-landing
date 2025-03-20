@@ -22,7 +22,6 @@ export default function ButtonCopy({
     try {
       await navigator.clipboard.writeText(content);
       setIsCopied(true);
-      console.log(content);
       setTimeout(() => setIsCopied(false), 3000);
     } catch (err) {
       console.error('Ошибка при копировании:', err);
