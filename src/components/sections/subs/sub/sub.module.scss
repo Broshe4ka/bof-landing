@@ -37,6 +37,9 @@
 
     border-radius: 0.5rem;
     overflow: hidden;
+    a {
+      z-index: 2;
+    }
   }
 
   &__info {
@@ -53,7 +56,6 @@
     right: -5%;
     max-width: 10rem;
     height: auto;
-    // aspect-ratio: 1 / 1;
   }
 }
 

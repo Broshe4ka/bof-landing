@@ -35,7 +35,6 @@ export default function Info(props: InfoDataProps) {
             alt="Превью"
             className={styles.image__picture}
           />
-          <div className={styles.image__bg} />
         </div>
       </section>
     </>
